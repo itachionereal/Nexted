@@ -1,0 +1,399 @@
+main.infos {
+  background-color: #161616;
+  z-index: 2;
+  gap: 60px;
+  overflow: hidden;
+
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    min-height: calc(100vh - 60px);
+    height: 100%;
+
+    .glowEllipse {
+      left: 50%;
+      background-color: #34a2fd;
+      border-radius: 50%;
+      position: absolute;
+      top: -18%;
+      transform: translateX(-50%);
+      z-index: 0;
+      max-width: 1248px;
+      width: 100%;
+      height: 200px;
+      filter: blur(180px);
+    }
+
+    .glowEllipse.two {
+      filter: blur(80px);
+    }
+
+    article.sections {
+      z-index: 2;
+      display: flex;
+      flex-direction: column;
+      gap: 128px;
+      flex: 1 0 0;
+      width: 100%;
+      overflow: hidden;
+
+      section.sectionInfo {
+        width: 100%;
+        min-height: 100%;
+
+        .descriptionTitle {
+          color: #888;
+          font-size: 24px;
+          font-weight: 500;
+
+          span {
+            color: #f6f6f6;
+          }
+        }
+      }
+
+      section.aboutUsSection {
+        display: flex;
+        flex-direction: column;
+
+        .paragraphs {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          flex: 1 0 0;
+
+          .paragraph {
+            color: #888;
+            font-size: 24px;
+            font-weight: 500;
+            position: relative;
+
+            span.highlightedText {
+              cursor: pointer;
+              color: #f6f6f6;
+              text-decoration-line: underline;
+              text-decoration-style: dotted;
+              text-decoration-skip-ink: none;
+              text-decoration-color: #454545;
+              text-decoration-thickness: 12%;
+              text-underline-offset: 2px;
+            }
+          }
+        }
+      }
+
+      section.standardsSection {
+        display: flex;
+        gap: 16px;
+        flex-direction: column;
+
+        .cardsContainer {
+          display: flex;
+          flex: 1;
+          gap: 16px;
+
+          div.cards {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+            flex: 1;
+            flex-wrap: wrap;
+
+            .card {
+              flex: 1;
+            }
+          }
+          div.item {
+            flex: 1;
+          }
+
+          div.card {
+            border-radius: 8px;
+            padding: 16px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            border: 1px solid #3d3d3d;
+            background-color: rgba(38, 38, 38, 0.6);
+            backdrop-filter: blur(30px);
+            transition: all 0.2s ease;
+            cursor: pointer;
+
+            h1.index {
+              color: #3d3d3d;
+              font-size: 24px;
+              font-weight: 600;
+              text-transform: capitalize;
+            }
+
+            div.cardInfo {
+              display: flex;
+              flex-direction: column;
+              gap: 4px;
+
+              h1.cardTitle {
+                color: #f6f6f6;
+                font-size: 24px;
+                font-style: normal;
+                font-weight: 500;
+                text-transform: uppercase;
+              }
+
+              p.cardParagrapgh {
+                color: #d1d1d1;
+                font-size: 14px;
+                font-style: normal;
+                line-height: normal;
+                text-transform: capitalize;
+              }
+            }
+          }
+
+          div.card:hover {
+            background-color: rgb(38, 38, 38, 0.8);
+          }
+
+          div.item:nth-child(3) {
+            flex: 0.75;
+          }
+        }
+      }
+
+      section.trustedBySection {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+
+        .partnersAndImpact {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          flex: 1;
+        }
+
+        .trustedBy {
+          display: grid;
+          grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+          width: 100%;
+          gap: 20px;
+
+          .trustElement {
+            padding: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            opacity: 60%;
+            transition: all 0.1s ease;
+
+            .trustedByImage {
+              width: 100%;
+            }
+
+            path {
+              transition: all 0.1s ease;
+            }
+          }
+
+          .trustElement:hover {
+            opacity: 100%;
+
+            path {
+              fill: #eef9ff;
+            }
+
+            path.specificPath {
+              fill: #161616;
+            }
+          }
+        }
+
+        .impacts {
+          display: grid;
+          grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+          gap: 48px;
+          justify-content: flex-start;
+
+          .impact {
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+            position: relative;
+            cursor: pointer;
+
+            .impactTitle {
+              color: #f6f6f6;
+              font-size: 36px;
+              font-weight: 600;
+              text-transform: uppercase;
+
+              span {
+                color: #d1d1d1;
+              }
+            }
+
+            .impactDescription {
+              color: #d1d1d1;
+              font-size: 12px;
+              font-weight: 500;
+              text-transform: uppercase;
+            }
+
+            .badge {
+              top: 0%;
+              opacity: 0;
+              scale: 0.5;
+              left: 64px;
+              border-radius: 99999999999px;
+              position: absolute;
+              transform: rotate(4deg);
+              padding: 8px 12px;
+              justify-content: center;
+              align-items: center;
+              background-color: #34a2fd;
+              color: #f6f6f6;
+              font-size: 12px;
+              font-weight: 500;
+              width: max-content;
+              cursor: default;
+              user-select: none;
+              transition: all 0.2s ease;
+            }
+          }
+          .impact:hover {
+            .badge {
+              top: -50%;
+              opacity: 1;
+              scale: 1;
+              transform: rotate(15deg);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 780px) {
+  main.infos {
+    overflow: hidden;
+
+    .wrapper {
+      article.sections {
+        overflow: visible;
+
+        section.sectionInfo {
+          min-height: fit-content;
+          height: 100% !important;
+        }
+
+        section.aboutUsSection {
+          .paragraphs {
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+
+            .paragraph {
+              color: #888;
+              font-size: 20px;
+              font-weight: 500;
+              position: relative;
+            }
+          }
+        }
+
+        section.standardsSection {
+          display: flex;
+          gap: 16px;
+          flex-direction: column;
+
+          .descriptionTitle {
+            font-size: 20px;
+          }
+
+          .cardsContainer {
+            display: flex;
+            flex-direction: column;
+            flex: 1;
+            gap: 24px;
+
+            div.cards {
+              display: flex;
+              flex-direction: column;
+              gap: 24px;
+              flex: 1;
+              flex-wrap: wrap;
+
+              .card {
+                flex: 1;
+              }
+            }
+            div.item {
+              flex: 1;
+            }
+
+            div.card {
+              gap: 32px;
+
+              h1.index {
+                color: #3d3d3d;
+                font-size: 24px;
+                font-weight: 600;
+                text-transform: capitalize;
+              }
+
+              div.cardInfo {
+                h1.cardTitle {
+                  font-size: 20px;
+                }
+
+                p.cardParagrapgh {
+                  font-size: 14px;
+                }
+              }
+            }
+          }
+        }
+
+        section.trustedBySection {
+          display: flex;
+          flex-direction: column;
+          gap: 16px;
+
+          .descriptionTitle {
+            font-size: 20px;
+          }
+
+          .partnersAndImpact {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            flex: 1;
+            gap: 128px;
+          }
+
+          .trustedBy {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+            width: 100%;
+            gap: 20px;
+          }
+
+          .impacts {
+            grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+
+            .impact {
+              .impactTitle {
+                font-size: 28px;
+              }
+            }
+          }
+        }
+      }
+
+      .glowEllipse {
+        top: -4%;
+      }
+    }
+  }
+}

@@ -1,0 +1,966 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nexted - Plans</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/styles/plans.css" />
+    <link rel="stylesheet" href="/styles/general.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="wrapper">
+        <a class="logo" href="/index.html">
+          <div class="image">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="22"
+              viewBox="0 0 20 22"
+              fill="none"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M3.16832 4.44429V8.70363C3.50619 8.62278 3.83799 8.51608 4.16064 8.38402C4.97748 8.04968 5.71971 7.55963 6.34485 6.94187C6.97004 6.32416 7.46599 5.59074 7.80436 4.78362C8.01581 4.27918 8.1631 3.7521 8.24386 3.21445C6.51568 3.37977 4.80577 3.78972 3.16832 4.44429ZM0 2.38594V8.89041V12.0211V12.1189C0 17.5761 4.47715 22 9.99999 22C15.5229 22 20 17.5761 20 12.1189V12.0211V8.89041V2.38594L18.5357 1.75609C13.0919 -0.585365 6.90809 -0.585365 1.46436 1.75609L0 2.38594ZM3.1689 12.208C3.20967 15.3229 5.38562 17.9291 8.31683 18.6629C8.31538 17.7929 8.14128 16.9317 7.80436 16.1279C7.46599 15.3207 6.97004 14.5873 6.34485 13.9696C5.71971 13.3518 4.97748 12.8618 4.16064 12.5275C3.83817 12.3955 3.50657 12.2888 3.1689 12.208ZM9.90096 13.3654C9.52213 12.7858 9.08135 12.2461 8.58523 11.7559C8.08907 11.2656 7.54286 10.8301 6.95629 10.4557C7.54286 10.0814 8.08907 9.64583 8.58523 9.15562C9.08135 8.66535 9.52213 8.12563 9.90096 7.54604C10.2799 8.12563 10.7206 8.66535 11.2168 9.15562C11.7129 9.64583 12.2591 10.0814 12.8457 10.4557C12.2591 10.8301 11.7129 11.2656 11.2168 11.7559C10.7206 12.2461 10.2799 12.7858 9.90096 13.3654ZM11.4852 18.7094C14.5299 18.0425 16.8105 15.368 16.8315 12.1636C16.4252 12.2481 16.0268 12.3697 15.6414 12.5275C14.8245 12.8618 14.0823 13.3518 13.4571 13.9696C12.8319 14.5873 12.336 15.3207 11.9976 16.1279C11.6593 16.935 11.4852 17.8001 11.4852 18.6737V18.7094ZM15.6414 8.38402C16.0268 8.54176 16.4254 8.66342 16.8317 8.7479V4.44429C15.1309 3.76439 13.3519 3.34841 11.5554 3.19636C11.6356 3.74028 11.7838 4.27352 11.9976 4.78362C12.336 5.59074 12.8319 6.32416 13.4571 6.94187C14.0823 7.55963 14.8245 8.04968 15.6414 8.38402Z"
+                fill="#F6F6F6"
+              />
+            </svg>
+          </div>
+
+          <span class="Nexted">Nexted</span>
+        </a>
+
+        <div class="mobile-menu-toggle">
+          <button class="open">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="lucide lucide-menu-icon lucide-menu"
+            >
+              <path d="M4 5h16" data--h-bstatus="0OBSERVED" />
+              <path d="M4 12h16" data--h-bstatus="0OBSERVED" />
+              <path d="M4 19h16" data--h-bstatus="0OBSERVED" />
+            </svg>
+          </button>
+
+          <button class="close">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="lucide lucide-x-icon lucide-x"
+            >
+              <path d="M18 6 6 18" data--h-bstatus="0OBSERVED" />
+              <path d="m6 6 12 12" data--h-bstatus="0OBSERVED" />
+            </svg>
+          </button>
+        </div>
+
+        <ul class="links">
+          <li class="link"><a href="/index.html">HOME</a></li>
+          <li class="link"><a href="/pages/about.html">ABOUT</a></li>
+          <li class="link active"><a>PLANS</a></li>
+          <li class="link">
+            <a href="/pages/testimonials.html">testimonials</a>
+          </li>
+
+          <button>download the app</button>
+        </ul>
+      </div>
+    </header>
+
+    <main class="plans">
+      <div class="wrapper">
+        <div class="description">
+          <h1 class="descriptionTitle">
+            Invest in Your <span class="highlightedText">Future</span>
+          </h1>
+          <p class="descriptionParagraph">
+            Our plans are designed to scale with your ambitions, offering the
+            structure, mentorship, and expert content you need to succeed at any
+            career stage.
+          </p>
+        </div>
+
+        <div class="plansCards">
+          <div class="plan NC">
+            <div class="plansDescription">
+              <h1 class="title">Nexted Core</h1>
+              <p class="price">$29 <span class="perMonth">/month</span></p>
+            </div>
+
+            <div class="benefits">
+              <div class="benifit">
+                <span class="icon">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                  >
+                    <path
+                      d="M10 2V10L13 7L16 10V2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M4 19.5V4.5C4 3.83696 4.26339 3.20107 4.73223 2.73223C5.20107 2.26339 5.83696 2 6.5 2H19C19.2652 2 19.5196 2.10536 19.7071 2.29289C19.8946 2.48043 20 2.73478 20 3V21C20 21.2652 19.8946 21.5196 19.7071 21.7071C19.5196 21.8946 19.2652 22 19 22H6.5C5.83696 22 5.20107 21.7366 4.73223 21.2678C4.26339 20.7989 4 20.163 4 19.5ZM4 19.5C4 18.837 4.26339 18.2011 4.73223 17.7322C5.20107 17.2634 5.83696 17 6.5 17H20"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </span>
+                <p>Verified Course & TD Repositories</p>
+              </div>
+              <div class="benifit">
+                <span class="icon">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-clipboard-check-icon lucide-clipboard-check"
+                  >
+                    <rect width="8" height="4" x="8" y="2" rx="1" ry="1" />
+                    <path
+                      d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"
+                    />
+                    <path d="m9 14 2 2 4-4" />
+                  </svg>
+                </span>
+                <p>Solved "Anciens Examens" Archive</p>
+              </div>
+              <div class="benifit">
+                <span class="icon"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-zap-icon lucide-zap"
+                  >
+                    <path
+                      d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"
+                    /></svg
+                ></span>
+                <p>Module Summary Cheatsheets</p>
+              </div>
+              <div class="benifit">
+                <span class="icon">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="22"
+                    height="22"
+                    viewBox="0 0 22 22"
+                    fill="none"
+                  >
+                    <path
+                      d="M1.74169 15.0917C1.88873 15.4626 1.92147 15.869 1.83569 16.2587L0.770691 19.5487C0.736375 19.7155 0.745248 19.8884 0.796467 20.0508C0.847686 20.2133 0.939553 20.36 1.06336 20.477C1.18716 20.594 1.3388 20.6774 1.50389 20.7193C1.66898 20.7613 1.84205 20.7604 2.00669 20.7167L5.41969 19.7187C5.78741 19.6458 6.16822 19.6776 6.51869 19.8107C8.65408 20.8079 11.0731 21.0189 13.3488 20.4064C15.6246 19.7939 17.611 18.3973 18.9574 16.4631C20.3038 14.5288 20.9238 12.1811 20.708 9.83424C20.4922 7.48738 19.4544 5.29216 17.7778 3.63589C16.1011 1.97962 13.8934 0.968732 11.5441 0.781591C9.19475 0.594449 6.85483 1.24308 4.93713 2.61303C3.01944 3.98299 1.64722 5.98624 1.06258 8.26933C0.477946 10.5524 0.71846 12.9686 1.74169 15.0917Z"
+                      stroke="#888888"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </span>
+                <p>Peer Q&A Forum Access</p>
+              </div>
+              <div class="benifit">
+                <span class="icon"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-calculator-icon lucide-calculator"
+                  >
+                    <rect width="16" height="20" x="4" y="2" rx="2" />
+                    <line x1="8" x2="16" y1="6" y2="6" />
+                    <line x1="16" x2="16" y1="14" y2="18" />
+                    <path d="M16 10h.01" />
+                    <path d="M12 10h.01" />
+                    <path d="M8 10h.01" />
+                    <path d="M12 14h.01" />
+                    <path d="M8 14h.01" />
+                    <path d="M12 18h.01" />
+                    <path d="M8 18h.01" /></svg
+                ></span>
+                <p>Basic GPA/Note Calculator</p>
+              </div>
+              <div class="benifit">
+                <span class="icon"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-calendar-icon lucide-calendar"
+                  >
+                    <path d="M8 2v4" />
+                    <path d="M16 2v4" />
+                    <rect width="18" height="18" x="3" y="4" rx="2" />
+                    <path d="M3 10h18" /></svg
+                ></span>
+                <p>Weekly Study Schedule Templates</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="plansGlowed">
+            <div class="glow"></div>
+
+            <div class="plan NP">
+              <div class="plansDescription">
+                <h1 class="title">Nexted Pro</h1>
+                <p class="price">$79 <span class="perMonth">/month</span></p>
+              </div>
+
+              <div class="benefits">
+                <div class="benifit">
+                  <span class="icon">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="lucide lucide-rotate-ccw-icon lucide-rotate-ccw"
+                    >
+                      <path
+                        d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"
+                      />
+                      <path d="M3 3v5h5" />
+                    </svg>
+                  </span>
+                  <p>Everything in Nexetd Core</p>
+                </div>
+                <div class="benifit">
+                  <span class="icon">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="lucide lucide-tool-case-icon lucide-tool-case"
+                    >
+                      <path d="M10 15h4" />
+                      <path
+                        d="m14.817 10.995-.971-1.45 1.034-1.232a2 2 0 0 0-2.025-3.238l-1.82.364L9.91 3.885a2 2 0 0 0-3.625.748L6.141 6.55l-1.725.426a2 2 0 0 0-.19 3.756l.657.27"
+                      />
+                      <path
+                        d="m18.822 10.995 2.26-5.38a1 1 0 0 0-.557-1.318L16.954 2.9a1 1 0 0 0-1.281.533l-.924 2.122"
+                      />
+                      <path
+                        d="M4 12.006A1 1 0 0 1 4.994 11H19a1 1 0 0 1 1 1v7a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2z"
+                      />
+                    </svg>
+                  </span>
+                  <p>Practical Skill Workshops</p>
+                </div>
+                <div class="benifit">
+                  <span class="icon">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="lucide lucide-file-user-icon lucide-file-user"
+                    >
+                      <path
+                        d="M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z"
+                      />
+                      <path d="M14 2v5a1 1 0 0 0 1 1h5" />
+                      <path d="M16 22a4 4 0 0 0-8 0" />
+                      <circle cx="12" cy="15" r="3" />
+                    </svg>
+                  </span>
+                  <p>ATS-Optimized CV Templates</p>
+                </div>
+                <div class="benifit">
+                  <span class="icon">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="lucide lucide-briefcase-icon lucide-briefcase"
+                    >
+                      <path d="M16 20V4a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16" />
+                      <rect width="20" height="14" x="2" y="6" rx="2" />
+                    </svg>
+                  </span>
+                  <p>Exclusive Internship Board</p>
+                </div>
+                <div class="benifit">
+                  <span class="icon">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="lucide lucide-braces-icon lucide-braces"
+                    >
+                      <path
+                        d="M8 3H7a2 2 0 0 0-2 2v5a2 2 0 0 1-2 2 2 2 0 0 1 2 2v5c0 1.1.9 2 2 2h1"
+                      />
+                      <path
+                        d="M16 21h1a2 2 0 0 0 2-2v-5c0-1.1.9-2 2-2a2 2 0 0 1-2-2V5a2 2 0 0 0-2-2h-1"
+                      />
+                    </svg>
+                  </span>
+                  <p>Mini-Project Code Reviews</p>
+                </div>
+                <div class="benifit">
+                  <span class="icon">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="lucide lucide-handshake-icon lucide-handshake"
+                    >
+                      <path d="m11 17 2 2a1 1 0 1 0 3-3" />
+                      <path
+                        d="m14 14 2.5 2.5a1 1 0 1 0 3-3l-3.88-3.88a3 3 0 0 0-4.24 0l-.88.88a1 1 0 1 1-3-3l2.81-2.81a5.79 5.79 0 0 1 7.06-.87l.47.28a2 2 0 0 0 1.42.25L21 4"
+                      />
+                      <path d="m21 3 1 11h-2" />
+                      <path d="M3 3 2 14l6.5 6.5a1 1 0 1 0 3-3" />
+                      <path d="M3 4h8" />
+                    </svg>
+                  </span>
+                  <p>"Soft Skills" for Interviews</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="plan NM">
+            <div class="plansDescription">
+              <h1 class="title">Nexted Max</h1>
+              <p class="price">$249 <span class="perMonth">/month</span></p>
+            </div>
+
+            <div class="benefits">
+              <div class="benifit">
+                <span class="icon">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-rotate-ccw-icon lucide-rotate-ccw"
+                  >
+                    <path
+                      d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"
+                    />
+                    <path d="M3 3v5h5" />
+                  </svg>
+                </span>
+                <p>Everything in Nexted Pro</p>
+              </div>
+              <div class="benifit">
+                <span class="icon">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-graduation-cap-icon lucide-graduation-cap"
+                  >
+                    <path
+                      d="M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.832l8.57 3.908a2 2 0 0 0 1.66 0z"
+                    />
+                    <path d="M22 10v6" />
+                    <path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5" />
+                  </svg>
+                </span>
+                <p>1-on-1 Alumni Mentorship</p>
+              </div>
+              <div class="benifit">
+                <span class="icon">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-map-icon lucide-map"
+                  >
+                    <path
+                      d="M14.106 5.553a2 2 0 0 0 1.788 0l3.659-1.83A1 1 0 0 1 21 4.619v12.764a1 1 0 0 1-.553.894l-4.553 2.277a2 2 0 0 1-1.788 0l-4.212-2.106a2 2 0 0 0-1.788 0l-3.659 1.83A1 1 0 0 1 3 19.381V6.618a1 1 0 0 1 .553-.894l4.553-2.277a2 2 0 0 1 1.788 0z"
+                    />
+                    <path d="M15 5.764v15" />
+                    <path d="M9 3.236v15" />
+                  </svg>
+                </span>
+                <p>"Concours" Entrance Roadmaps</p>
+              </div>
+              <div class="benifit">
+                <span class="icon">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-mic-vocal-icon lucide-mic-vocal"
+                  >
+                    <path
+                      d="m11 7.601-5.994 8.19a1 1 0 0 0 .1 1.298l.817.818a1 1 0 0 0 1.314.087L15.09 12"
+                    />
+                    <path
+                      d="M16.5 21.174C15.5 20.5 14.372 20 13 20c-2.058 0-3.928 2.356-6 2-2.072-.356-2.775-3.369-1.5-4.5"
+                    />
+                    <circle cx="16" cy="7" r="5" />
+                  </svg>
+                </span>
+                <p>Mock Oral Interviews</p>
+              </div>
+              <div class="benifit">
+                <span class="icon">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-headset-icon lucide-headset"
+                  >
+                    <path
+                      d="M3 11h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-5Zm0 0a9 9 0 1 1 18 0m0 0v5a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3Z"
+                    />
+                    <path d="M21 16v2a4 4 0 0 1-4 4h-5" />
+                  </svg>
+                </span>
+                <p>Priority 24/7 Support</p>
+              </div>
+              <div class="benifit">
+                <span class="icon">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-earth-icon lucide-earth"
+                  >
+                    <path d="M21.54 15H17a2 2 0 0 0-2 2v4.54" />
+                    <path
+                      d="M7 3.34V5a3 3 0 0 0 3 3a2 2 0 0 1 2 2c0 1.1.9 2 2 2a2 2 0 0 0 2-2c0-1.1.9-2 2-2h3.17"
+                    />
+                    <path
+                      d="M11 21.95V18a2 2 0 0 0-2-2a2 2 0 0 1-2-2v-1a2 2 0 0 0-2-2H2.05"
+                    />
+                    <circle cx="12" cy="12" r="10" />
+                  </svg>
+                </span>
+                <p>Private Networking Webinars</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <main class="libraryAndFaq">
+      <div class="wrapper">
+        <section class="FAQs">
+          <div class="description">
+            <h1 class="descriptionTitle">Common Questions</h1>
+            <p class="descriptionParagraph">
+              Get clear answers to your questions so you can focus entirely on
+              your academic success.
+            </p>
+          </div>
+
+          <div class="faqsContainer">
+            <div class="faq">
+              <div class="questionContainer">
+                <p class="question">
+                  What is included in the "Verified Course & TD Repositories"?
+                </p>
+                <span class="icon">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-chevron-down-icon lucide-chevron-down"
+                  >
+                    <path d="m6 9 6 6 6-6" />
+                  </svg>
+                </span>
+              </div>
+
+              <div class="answerContainer">
+                <p class="answer">
+                  The Core plan gives you access to a curated library of courses
+                  and Tutorial Directed (TD) exercises for key modules. These
+                  are verified for accuracy to ensure you are studying the right
+                  material for your exams.
+                </p>
+              </div>
+            </div>
+
+            <div class="faq">
+              <div class="questionContainer">
+                <p class="question">
+                  How does the "1-on-1 Alumni Mentorship" in the Max plan work?
+                </p>
+                <span class="icon">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-chevron-down-icon lucide-chevron-down"
+                  >
+                    <path d="m6 9 6 6 6-6" />
+                  </svg>
+                </span>
+              </div>
+
+              <div class="answerContainer">
+                <p class="answer">
+                  You are paired with a successful alumnus from a top
+                  engineering school (like ENSA or EMI). They provide
+                  personalized guidance, review your progress, and help you
+                  navigate the specific challenges of engineering entrance
+                  exams.
+                </p>
+              </div>
+            </div>
+
+            <div class="faq">
+              <div class="questionContainer">
+                <p class="question">Can I upgrade from Core to Pro later?</p>
+                <span class="icon">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-chevron-down-icon lucide-chevron-down"
+                  >
+                    <path d="m6 9 6 6 6-6" />
+                  </svg>
+                </span>
+              </div>
+
+              <div class="answerContainer">
+                <p class="answer">
+                  Yes, absolutely. Many students start with Nexted Core to
+                  secure their semester grades and upgrade to Nexted Pro when
+                  they are ready to apply for internships and need the CV
+                  templates and workshops.
+                </p>
+              </div>
+            </div>
+
+            <div class="faq">
+              <div class="questionContainer">
+                <p class="question">
+                  What kind of "Mini-Projects" are reviewed in the Pro plan?
+                </p>
+                <span class="icon">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-chevron-down-icon lucide-chevron-down"
+                  >
+                    <path d="m6 9 6 6 6-6" />
+                  </svg>
+                </span>
+              </div>
+
+              <div class="answerContainer">
+                <p class="answer">
+                  We focus on technical projects relevant to your major (e.g., a
+                  C programming challenge or a Web Design landing page). You
+                  submit your code, and our experts provide detailed feedback to
+                  improve your clean coding practices.
+                </p>
+              </div>
+            </div>
+
+            <div class="faq">
+              <div class="questionContainer">
+                <p class="question">
+                  Are the "Solved Anciens Examens" from recent years?
+                </p>
+                <span class="icon">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-chevron-down-icon lucide-chevron-down"
+                  >
+                    <path d="m6 9 6 6 6-6" />
+                  </svg>
+                </span>
+              </div>
+
+              <div class="answerContainer">
+                <p class="answer">
+                  Yes. Our archive is regularly updated to include recent exams
+                  from various faculties. This helps you practice with relevant
+                  formats and questions that you are likely to face.
+                </p>
+              </div>
+            </div>
+
+            <div class="faq">
+              <div class="questionContainer">
+                <p class="question">
+                  What are the "Concours Entrance Roadmaps"?
+                </p>
+                <span class="icon">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-chevron-down-icon lucide-chevron-down"
+                  >
+                    <path d="m6 9 6 6 6-6" />
+                  </svg>
+                </span>
+              </div>
+
+              <div class="answerContainer">
+                <p class="answer">
+                  Exclusive to Nexted Max, these are strategic study guides
+                  designed specifically for competitive entrance exams (Concours
+                  d'accès). They break down exactly what topics to prioritize to
+                  maximize your chances of admission.
+                </p>
+              </div>
+            </div>
+
+            <div class="faq">
+              <div class="questionContainer">
+                <p class="question">
+                  How do the "ATS-Optimized CV Templates" help me?
+                </p>
+                <span class="icon">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-chevron-down-icon lucide-chevron-down"
+                  >
+                    <path d="m6 9 6 6 6-6" />
+                  </svg>
+                </span>
+              </div>
+
+              <div class="answerContainer">
+                <p class="answer">
+                  Many internships use Applicant Tracking Systems (ATS) to
+                  filter resumes. Our templates in the Pro Plan are formatted to
+                  pass these filters, ensuring your application actually reaches
+                  a human recruiter.
+                </p>
+              </div>
+            </div>
+
+            <div class="faq">
+              <div class="questionContainer">
+                <p class="question">
+                  Is the "Exclusive Internship Board" available to everyone?
+                </p>
+                <span class="icon">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-chevron-down-icon lucide-chevron-down"
+                  >
+                    <path d="m6 9 6 6 6-6" />
+                  </svg>
+                </span>
+              </div>
+
+              <div class="answerContainer">
+                <p class="answer">
+                  This feature is reserved for Pro and Max members. We curate a
+                  list of high-quality internship opportunities relevant to
+                  Bac+2 students, saving you time searching through generic job
+                  sites.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="wrapper">
+        <!-- top de section -->
+        <div class="footer-top">
+          <!-- logo and description -->
+          <div class="footer-brand">
+            <div class="footer-logo">
+              <span>Nexted</span>
+            </div>
+            <p class="footer-description">
+              Empowering the next generation of learners with modern,
+              interactive, and practical education.
+            </p>
+            <!-- social media -->
+            <div class="footer-social">
+              <a href="#" aria-label="Facebook">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-facebook-icon lucide-facebook"
+                >
+                  <path
+                    d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"
+                  />
+                </svg>
+              </a>
+              <a href="#" aria-label="Twitter">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                >
+                  <path
+                    d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"
+                    fill="none"
+                  />
+                </svg>
+              </a>
+              <a href="#" aria-label="Instagram">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                >
+                  <rect
+                    x="2"
+                    y="2"
+                    width="20"
+                    height="20"
+                    rx="5"
+                    ry="5"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    fill="none"
+                  />
+                  <circle
+                    cx="12"
+                    cy="12"
+                    r="4"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    fill="none"
+                  />
+                  <circle cx="17.5" cy="6.5" r="1.5" fill="none" />
+                </svg>
+              </a>
+              <a href="#" aria-label="LinkedIn">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                >
+                  <path
+                    d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2z"
+                    fill="none"
+                  />
+                  <circle cx="4" cy="4" r="2" fill="none" />
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- column for resources -->
+          <div class="footer-column">
+            <h3>Resources</h3>
+            <ul>
+              <li><a href="/pages/maintenance.html">Course Library</a></li>
+              <li><a href="/pages/maintenance.html">Blog</a></li>
+              <li><a href="/pages/maintenance.html">FAQ</a></li>
+              <li><a href="/pages/maintenance.html">Support</a></li>
+            </ul>
+          </div>
+
+          <!-- for neWsletter -->
+          <div class="footer-column">
+            <h3>Stay Updated</h3>
+            <div class="footer-newsletter">
+              <input type="email" placeholder="Enter your email" />
+              <button>Subscribe</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- section bottom -->
+        <div class="footer-bottom">
+          <p class="footer-copyright">© 2025 Nexted. All rights reserved.</p>
+          <div class="footer-links">
+            <a href="/pages/maintenance.html">Privacy Policy</a>
+            <a href="/pages/maintenance.html">Terms of Service</a>
+            <a href="/pages/maintenance.html">Cookie Policy</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="/scripts/plans.js"></script>
+    <script src="/scripts/menuBtn.js"></script>
+    <script src="/scripts/faq.js"></script>
+    <script src="/node_modules/gsap/dist/all.js"></script>
+  </body>
+</html>

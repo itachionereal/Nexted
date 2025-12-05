@@ -1,0 +1,186 @@
+/* PLANS */
+main.plans {
+  background-color: #161616;
+  overflow: hidden;
+
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 56px;
+    min-height: calc(100vh - 60px);
+    height: 100%;
+
+    .description {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+
+      .descriptionTitle {
+        color: #888;
+        font-size: 24px;
+        font-weight: 500;
+
+        span {
+          color: #f6f6f6;
+        }
+      }
+
+      .descriptionParagraph {
+        color: #d1d1d1;
+        font-size: 14px;
+        font-weight: 400;
+      }
+    }
+
+    .plansCards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+      width: 100%;
+      gap: 24px;
+      flex: 1;
+
+      .plan:hover {
+        background-color: rgb(38, 38, 38, 0.8);
+      }
+
+      .plan {
+        width: 100%;
+        border-radius: 8px;
+        padding: 16px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        border: 1px solid #3d3d3d;
+        background-color: rgba(38, 38, 38, 0.6);
+        backdrop-filter: blur(30px);
+        transition: all 0.2s ease;
+        cursor: pointer;
+        height: 100%;
+        z-index: 2;
+        gap: 32px;
+
+        .plansDescription {
+          display: flex;
+          flex-direction: column;
+          gap: 12px;
+
+          .title {
+            color: #3d3d3d;
+            font-size: 24px;
+            font-weight: 600;
+            text-transform: capitalize;
+          }
+
+          .price {
+            color: #f6f6f6;
+            font-size: 24px;
+            font-weight: 500;
+            text-transform: capitalize;
+
+            span {
+              color: #888;
+              font-size: 14px;
+              font-weight: 500;
+            }
+          }
+        }
+
+        .benefits {
+          display: flex;
+          flex-direction: column;
+          gap: 16px;
+
+          .benifit {
+            display: flex;
+            gap: 8px;
+            align-items: center;
+
+            span.icon {
+              display: flex;
+              width: 16px;
+              height: 16px;
+              align-items: center;
+              justify-content: center;
+
+              svg {
+                height: 100%;
+
+                path,
+                rect,
+                line,
+                circle {
+                  stroke: #888888;
+                  stroke-width: 2;
+                }
+              }
+            }
+
+            p {
+              color: #d1d1d1;
+              font-size: 14px;
+              font-weight: 400;
+              text-transform: capitalize;
+            }
+          }
+        }
+      }
+
+      .plansGlowed {
+        position: relative;
+        display: flex;
+
+        .plan.NP:hover {
+          background-color: rgba(38, 38, 38, 0.8);
+          backdrop-filter: blur(0px);
+        }
+
+        .plan.NP {
+          border: 1px solid #34a2fd;
+          background-color: rgba(38, 38, 38, 0.6);
+          backdrop-filter: blur(50px);
+          position: relative;
+        }
+
+        .plan.NP::after {
+          content: "most popular";
+          position: absolute;
+          color: #34a2fd;
+          font-size: 12px;
+          font-weight: 500;
+          text-transform: uppercase;
+          top: -12px;
+          right: 16px;
+          padding: 4px 12px;
+          border: 1px solid #34a2fd;
+          background-color: #262626;
+          border-radius: 1000000px;
+        }
+
+        .glow {
+          width: 250px;
+          height: 250px;
+          left: 50%;
+          top: 50%;
+          background-color: #34a2fd;
+          border-radius: 50%;
+          position: absolute;
+          transform: translate(-50%, -50%);
+          z-index: 1;
+          filter: blur(100px);
+        }
+      }
+    }
+  }
+}
+@media (max-width: 780px) {
+  main.plans {
+    .wrapper {
+      .description {
+        .descriptionTitle {
+          font-size: 20px;
+        }
+      }
+    }
+  }
+}
+/* PLANS */

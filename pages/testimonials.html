@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nexted - Testimonials</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/styles/testimonials.css" />
+    <link rel="stylesheet" href="/styles/general.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="wrapper">
+        <a class="logo" href="/index.html">
+          <div class="image">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="22"
+              viewBox="0 0 20 22"
+              fill="none"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M3.16832 4.44429V8.70363C3.50619 8.62278 3.83799 8.51608 4.16064 8.38402C4.97748 8.04968 5.71971 7.55963 6.34485 6.94187C6.97004 6.32416 7.46599 5.59074 7.80436 4.78362C8.01581 4.27918 8.1631 3.7521 8.24386 3.21445C6.51568 3.37977 4.80577 3.78972 3.16832 4.44429ZM0 2.38594V8.89041V12.0211V12.1189C0 17.5761 4.47715 22 9.99999 22C15.5229 22 20 17.5761 20 12.1189V12.0211V8.89041V2.38594L18.5357 1.75609C13.0919 -0.585365 6.90809 -0.585365 1.46436 1.75609L0 2.38594ZM3.1689 12.208C3.20967 15.3229 5.38562 17.9291 8.31683 18.6629C8.31538 17.7929 8.14128 16.9317 7.80436 16.1279C7.46599 15.3207 6.97004 14.5873 6.34485 13.9696C5.71971 13.3518 4.97748 12.8618 4.16064 12.5275C3.83817 12.3955 3.50657 12.2888 3.1689 12.208ZM9.90096 13.3654C9.52213 12.7858 9.08135 12.2461 8.58523 11.7559C8.08907 11.2656 7.54286 10.8301 6.95629 10.4557C7.54286 10.0814 8.08907 9.64583 8.58523 9.15562C9.08135 8.66535 9.52213 8.12563 9.90096 7.54604C10.2799 8.12563 10.7206 8.66535 11.2168 9.15562C11.7129 9.64583 12.2591 10.0814 12.8457 10.4557C12.2591 10.8301 11.7129 11.2656 11.2168 11.7559C10.7206 12.2461 10.2799 12.7858 9.90096 13.3654ZM11.4852 18.7094C14.5299 18.0425 16.8105 15.368 16.8315 12.1636C16.4252 12.2481 16.0268 12.3697 15.6414 12.5275C14.8245 12.8618 14.0823 13.3518 13.4571 13.9696C12.8319 14.5873 12.336 15.3207 11.9976 16.1279C11.6593 16.935 11.4852 17.8001 11.4852 18.6737V18.7094ZM15.6414 8.38402C16.0268 8.54176 16.4254 8.66342 16.8317 8.7479V4.44429C15.1309 3.76439 13.3519 3.34841 11.5554 3.19636C11.6356 3.74028 11.7838 4.27352 11.9976 4.78362C12.336 5.59074 12.8319 6.32416 13.4571 6.94187C14.0823 7.55963 14.8245 8.04968 15.6414 8.38402Z"
+                fill="#F6F6F6"
+              />
+            </svg>
+          </div>
+
+          <span class="Nexted">Nexted</span>
+        </a>
+
+        <div class="mobile-menu-toggle">
+          <button class="open">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="lucide lucide-menu-icon lucide-menu"
+            >
+              <path d="M4 5h16" data--h-bstatus="0OBSERVED" />
+              <path d="M4 12h16" data--h-bstatus="0OBSERVED" />
+              <path d="M4 19h16" data--h-bstatus="0OBSERVED" />
+            </svg>
+          </button>
+
+          <button class="close">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="lucide lucide-x-icon lucide-x"
+            >
+              <path d="M18 6 6 18" data--h-bstatus="0OBSERVED" />
+              <path d="m6 6 12 12" data--h-bstatus="0OBSERVED" />
+            </svg>
+          </button>
+        </div>
+
+        <ul class="links">
+          <li class="link"><a href="/index.html">HOME</a></li>
+          <li class="link"><a href="/pages/about.html">ABOUT</a></li>
+          <li class="link"><a href="/pages/plans.html">PLANS</a></li>
+          <li class="link active">
+            <a>testimonials</a>
+          </li>
+
+          <button>download the app</button>
+        </ul>
+      </div>
+    </header>
+
+    <main class="testimonials">
+      <div class="wrapper">
+        <div class="content">
+          <div class="testimonialsContainer">
+            <span class="icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+              >
+                <g clip-path="url(#clip0_1286_747)">
+                  <path
+                    d="M17.76 0.799805C17.081 0.799805 16.4299 1.06952 15.9498 1.54961C15.4697 2.0297 15.2 2.68085 15.2 3.3598V11.0398C15.2 11.7188 15.4697 12.3699 15.9498 12.85C16.4299 13.3301 17.081 13.5998 17.76 13.5998C18.0994 13.5998 18.425 13.7347 18.665 13.9747C18.9051 14.2148 19.04 14.5403 19.04 14.8798V16.1598C19.04 16.8388 18.7702 17.4899 18.2901 17.97C17.8101 18.4501 17.1589 18.7198 16.48 18.7198C16.1405 18.7198 15.8149 18.8547 15.5749 19.0947C15.3348 19.3348 15.2 19.6603 15.2 19.9998V22.5598C15.2 22.8993 15.3348 23.2249 15.5749 23.4649C15.8149 23.7049 16.1405 23.8398 16.48 23.8398C18.5168 23.8398 20.4703 23.0307 21.9105 21.5904C23.3508 20.1501 24.16 18.1967 24.16 16.1598V3.3598C24.16 2.68085 23.8902 2.0297 23.4101 1.54961C22.9301 1.06952 22.2789 0.799805 21.6 0.799805H17.76Z"
+                    fill="#3D3D3D"
+                  />
+                  <path
+                    d="M3.03998 0.47998C2.36103 0.47998 1.70988 0.749694 1.22979 1.22979C0.749694 1.70988 0.47998 2.36103 0.47998 3.03998V10.72C0.47998 11.3989 0.749694 12.0501 1.22979 12.5302C1.70988 13.0103 2.36103 13.28 3.03998 13.28C3.37946 13.28 3.70503 13.4148 3.94508 13.6549C4.18512 13.8949 4.31998 14.2205 4.31998 14.56V15.84C4.31998 16.5189 4.05027 17.1701 3.57017 17.6502C3.09008 18.1303 2.43893 18.4 1.75998 18.4C1.4205 18.4 1.09493 18.5348 0.854884 18.7749C0.614837 19.0149 0.47998 19.3405 0.47998 19.68V22.24C0.47998 22.5795 0.614837 22.905 0.854884 23.1451C1.09493 23.3851 1.4205 23.52 1.75998 23.52C3.79684 23.52 5.75028 22.7108 7.19056 21.2706C8.63084 19.8303 9.43998 17.8768 9.43998 15.84V3.03998C9.43998 2.36103 9.17027 1.70988 8.69017 1.22979C8.21008 0.749694 7.55893 0.47998 6.87998 0.47998H3.03998Z"
+                    fill="#3D3D3D"
+                  />
+                </g>
+                <defs>
+                  <clipPath id="clip0_1286_747">
+                    <rect width="24" height="24" fill="white" />
+                  </clipPath>
+                </defs>
+              </svg>
+            </span>
+
+            <div class="testimonialsSection">
+              <div class="testimonial" data-index="1">
+                <p>
+                  I was struggling with the logic behind Algorithms and Pointers
+                  in C. Nexted&apos;s library broke it down with clear exercises
+                  that actually made sense. The Web Development mini-project
+                  also gave me something solid to show for my internship
+                  application.
+                </p>
+              </div>
+
+              <div class="testimonial" data-index="2">
+                <p>
+                  I needed more than just theory. The Arduino Basics and MATLAB
+                  simulations helped me visualize the concepts we learned in
+                  class. The mentorship helped me structure my end-of-year
+                  project, which ended up getting the top grade in my cohort.
+                </p>
+              </div>
+
+              <div class="testimonial" data-index="3">
+                <p>
+                  I had good grades, but I was terrified of my engineering
+                  school interviews. Nexted closed that gap. Beyond the
+                  technical Data Science modules, the Professional Communication
+                  and Scientific English tracks gave me the confidence to
+                  present my projects fluently. I didn't just pass my exams; I
+                  secured my spot at a top engineering school.
+                </p>
+              </div>
+
+              <div class="testimonial" data-index="4">
+                <p>
+                  The resources for Cell Biology and Metabolism saved me during
+                  finals. Having access to structured summaries and Lab
+                  Techniques guides meant I spent less time searching for notes
+                  and more time actually understanding the material.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="authors">
+          <div class="author active">
+            <h1 class="authorName">Mouad Boukdir</h1>
+            <p class="authorJob">Informatique (S. INFO)</p>
+          </div>
+
+          <div class="author">
+            <h1 class="authorName">Salma El Amrani</h1>
+            <p class="authorJob">Physics & Engineering</p>
+          </div>
+
+          <div class="author">
+            <h1 class="authorName">Annas Ennamous</h1>
+            <p class="authorJob">Mathématiques & Applications</p>
+          </div>
+
+          <div class="author">
+            <h1 class="authorName">Sohaib Guilighe</h1>
+            <p class="authorJob">SVT / Biologie</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="glowEllipse one"></div>
+      <div class="glowEllipse two"></div>
+    </main>
+
+    <main class="libraryAndFaq">
+      <div class="wrapper">
+        <section class="FAQs">
+          <div class="description">
+            <h1 class="descriptionTitle">Common Questions</h1>
+            <p class="descriptionParagraph">
+              Get clear answers to your questions so you can focus entirely on
+              your academic success.
+            </p>
+          </div>
+
+          <div class="faqsContainer">
+            <div class="faq">
+              <div class="questionContainer">
+                <p class="question">
+                  Are these testimonials from verified students?
+                </p>
+                <span class="icon">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-chevron-down-icon lucide-chevron-down"
+                  >
+                    <path d="m6 9 6 6 6-6" />
+                  </svg>
+                </span>
+              </div>
+
+              <div class="answerContainer">
+                <p class="answer">
+                  Yes. Every review comes from a verified active member of our
+                  cohort. Students like Mouad Boukdir (S. INFO) and Salma El
+                  Amrani (Physics) have used our specific tracks to validate
+                  their modules and secure internships.
+                </p>
+              </div>
+            </div>
+
+            <div class="faq">
+              <div class="questionContainer">
+                <p class="question">
+                  I see S. INFO reviews, but does this work for Biology (SVT)
+                  majors?
+                </p>
+                <span class="icon">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-chevron-down-icon lucide-chevron-down"
+                  >
+                    <path d="m6 9 6 6 6-6" />
+                  </svg>
+                </span>
+              </div>
+
+              <div class="answerContainer">
+                <p class="answer">
+                  Absolutely. Our platform covers multiple disciplines. As noted
+                  by our student Sohaib Guilighe, we provide specialized
+                  resources for SVT / Biologie, ensuring that life science
+                  students get the same quality of support as engineering
+                  students.
+                </p>
+              </div>
+            </div>
+
+            <div class="faq">
+              <div class="questionContainer">
+                <p class="question">
+                  How specifically does Nexted help with internships?
+                </p>
+                <span class="icon">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-chevron-down-icon lucide-chevron-down"
+                  >
+                    <path d="m6 9 6 6 6-6" />
+                  </svg>
+                </span>
+              </div>
+
+              <div class="answerContainer">
+                <p class="answer">
+                  We focus on portfolio building. For example, students
+                  struggling with abstract concepts like "Pointers in C" use our
+                  mini-projects (like Web Development) to create tangible work
+                  they can show to recruiters, just as Mouad did to strengthen
+                  his application.
+                </p>
+              </div>
+            </div>
+
+            <div class="faq">
+              <div class="questionContainer">
+                <p class="question">Can I talk to these students for advice?</p>
+                <span class="icon">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-chevron-down-icon lucide-chevron-down"
+                  >
+                    <path d="m6 9 6 6 6-6" />
+                  </svg>
+                </span>
+              </div>
+
+              <div class="answerContainer">
+                <p class="answer">
+                  Yes. Nexted is built on Human Support. By joining, you enter a
+                  "Collaborative, Active Community" where you can interact with
+                  peers like Annas Ennamous (Mathématiques) to share tips and
+                  grow together.
+                </p>
+              </div>
+            </div>
+
+            <div class="faq">
+              <div class="questionContainer">
+                <p class="question">
+                  Is the content useful if I am already good at coding?
+                </p>
+                <span class="icon">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-chevron-down-icon lucide-chevron-down"
+                  >
+                    <path d="m6 9 6 6 6-6" />
+                  </svg>
+                </span>
+              </div>
+
+              <div class="answerContainer">
+                <p class="answer">
+                  Yes. While we help students who are "struggling with logic,"
+                  we also support high achievers. Our resources are designed to
+                  take you from understanding the basics to mastering complex
+                  applications, regardless of your starting level.
+                </p>
+              </div>
+
+              <div class="faq">
+                <div class="questionContainer">
+                  <p class="question">
+                    Do you really track student satisfaction?
+                  </p>
+                  <span class="icon">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="lucide lucide-chevron-down-icon lucide-chevron-down"
+                    >
+                      <path d="m6 9 6 6 6-6" />
+                    </svg>
+                  </span>
+                </div>
+
+                <div class="answerContainer">
+                  <p class="answer">
+                    Yes. While we help students who are "struggling with logic,"
+                    we also support high achievers. Our resources are designed
+                    to take you from understanding the basics to mastering
+                    complex applications, regardless of your starting level.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="wrapper">
+        <!-- top de section -->
+        <div class="footer-top">
+          <!-- logo and description -->
+          <div class="footer-brand">
+            <div class="footer-logo">
+              <span>Nexted</span>
+            </div>
+            <p class="footer-description">
+              Empowering the next generation of learners with modern,
+              interactive, and practical education.
+            </p>
+            <!-- social media -->
+            <div class="footer-social">
+              <a href="#" aria-label="Facebook">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-facebook-icon lucide-facebook"
+                >
+                  <path
+                    d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"
+                  />
+                </svg>
+              </a>
+              <a href="#" aria-label="Twitter">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                >
+                  <path
+                    d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"
+                    fill="none"
+                  />
+                </svg>
+              </a>
+              <a href="#" aria-label="Instagram">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                >
+                  <rect
+                    x="2"
+                    y="2"
+                    width="20"
+                    height="20"
+                    rx="5"
+                    ry="5"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    fill="none"
+                  />
+                  <circle
+                    cx="12"
+                    cy="12"
+                    r="4"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    fill="none"
+                  />
+                  <circle cx="17.5" cy="6.5" r="1.5" fill="none" />
+                </svg>
+              </a>
+              <a href="#" aria-label="LinkedIn">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                >
+                  <path
+                    d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2z"
+                    fill="none"
+                  />
+                  <circle cx="4" cy="4" r="2" fill="none" />
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- column for resources -->
+          <div class="footer-column">
+            <h3>Resources</h3>
+            <ul>
+              <li><a href="/pages/maintenance.html">Course Library</a></li>
+              <li><a href="/pages/maintenance.html">Blog</a></li>
+              <li><a href="/pages/maintenance.html">FAQ</a></li>
+              <li><a href="/pages/maintenance.html">Support</a></li>
+            </ul>
+          </div>
+
+          <!-- for neWsletter -->
+          <div class="footer-column">
+            <h3>Stay Updated</h3>
+            <div class="footer-newsletter">
+              <input type="email" placeholder="Enter your email" />
+              <button>Subscribe</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- section bottom -->
+        <div class="footer-bottom">
+          <p class="footer-copyright">© 2025 Nexted. All rights reserved.</p>
+          <div class="footer-links">
+            <a href="/pages/maintenance.html">Privacy Policy</a>
+            <a href="/pages/maintenance.html">Terms of Service</a>
+            <a href="/pages/maintenance.html">Cookie Policy</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="/scripts/testimonials.js"></script>
+    <script src="/scripts/menuBtn.js"></script>
+    <script src="/scripts/faq.js"></script>
+    <script src="/node_modules/gsap/dist/all.js"></script>
+  </body>
+</html>

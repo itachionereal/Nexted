@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nexted - Testimonials</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/styles/general.css" />
+
+    <style>
+      main.testimonials {
+        background-color: #161616;
+        overflow: hidden;
+
+        .wrapper {
+          display: flex;
+          flex-direction: column;
+          gap: 32px;
+          min-height: calc(100vh - 60px);
+          height: 100%;
+
+          .description {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+
+            .descriptionTitle {
+              color: #888;
+              font-size: 32px;
+              font-weight: 500;
+
+              span {
+                color: #f6f6f6;
+              }
+            }
+
+            .descriptionParagraph {
+              color: #d1d1d1;
+              font-size: 24px;
+              font-weight: 500;
+            }
+          }
+
+          button {
+            background: #34a2fd;
+            transition: all 0.2s ease;
+            width: fit-content;
+
+            a {
+              color: #f6f6f6;
+              font-weight: 500;
+            }
+          }
+          button.cta:hover {
+            background: #1898fb;
+          }
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main class="testimonials">
+      <div class="wrapper">
+        <div class="description">
+          <h1 class="descriptionTitle">We&apos;ll Be Right Back</h1>
+          <p class="descriptionParagraph">
+            We&apos;re making some improvements to help you learn better. Grab a
+            coffee, review your notes, and check back soon—we won't be long!
+          </p>
+        </div>
+
+        <button><a href="/index.html">Go Back Home</a></button>
+      </div>
+    </main>
+  </body>
+</html>
