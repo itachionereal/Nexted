@@ -183,4 +183,13 @@ main.plans {
     }
   }
 }
+@media (max-width: 399px) {
+  main.plans {
+    .wrapper {
+      .plansCards {
+        grid-template-columns: 1fr;
+      }
+    }
+  }
+}
 /* PLANS */

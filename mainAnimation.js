@@ -62,6 +62,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   gsap.set(splitHeroTitle.lines, {
     y: "100%",
+    opacity: 0,
   });
 
   tools.forEach((tool) => {
@@ -78,6 +79,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   gsap.set(heroInfos, {
     y: "150",
+    opacity: 0,
   });
 
   //   HERO ANIMATION START
@@ -94,6 +96,7 @@ document.addEventListener("DOMContentLoaded", () => {
     })
     .to(splitHeroTitle.lines, {
       y: 0,
+      opacity: 1,
       ease: "expo.out",
       duration: 0.5,
       stagger: 0.2,
@@ -125,6 +128,7 @@ document.addEventListener("DOMContentLoaded", () => {
     .to(
       heroInfos,
       {
+        opacity: 1,
         duration: 1,
         y: 0,
         ease: "expo.out",

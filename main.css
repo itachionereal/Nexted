@@ -524,12 +524,26 @@ main.hero {
     }
   }
 }
-/* @media (max-width: 399px) {
+@media (max-width: 399px) {
   main.hero {
     .wrapper {
+      section.heroSection {
+        .infos {
+          .btns {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            width: 100%;
+
+            button {
+              width: 100%;
+            }
+          }
+        }
+      }
     }
   }
-} */
+}
 
 /* HOME */
 
@@ -1118,6 +1132,15 @@ main.plans {
         .descriptionTitle {
           font-size: 20px;
         }
+      }
+    }
+  }
+}
+@media (max-width: 399px) {
+  main.plans {
+    .wrapper {
+      .plansCards {
+        grid-template-columns: 1fr;
       }
     }
   }
